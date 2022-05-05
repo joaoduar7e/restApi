@@ -5,7 +5,8 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json;
 
 {
-    "userName": "João Duarte",
-    "userChannel": "CursoNode"
+    "userName": "Danilo",
+    "userChannel": "Dockers"
 }
 ###
+GET http://localhost:3000/subscribers/6273bac90ec43f31c5b8a0da
