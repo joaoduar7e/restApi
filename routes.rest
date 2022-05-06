@@ -10,3 +10,5 @@ Content-Type: application/json;
 }
 ###
 GET http://localhost:3000/subscribers/6273bac90ec43f31c5b8a0da
+### 
+DELETE http://localhost:3000/subscribers/6273ba730ec43f31c5b8a0d5

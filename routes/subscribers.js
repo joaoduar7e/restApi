@@ -39,12 +39,10 @@ router.patch('/:id', getSubscriber, (req, res)=> {
 
 router.delete('/:id', getSubscriber, async (req, res)=> {
     try{
-        const subscriber = await Subscriber.findById(req.params.id)
-        if(subscriber == null){
-            return res.status(400).json({message: subscriber not found!})
-        }
+        await res.subscriber.remove()
+        res.json({message: 'Subscriber deletado com sucesso!'})
     } catch(error) {
-        res.status(400).json({message: error.message})
+        res.status(500).json({message: error.message})
     }
 
 })
