@@ -9,6 +9,15 @@ Content-Type: application/json;
     "userChannel": "Dockers"
 }
 ###
-GET http://localhost:3000/subscribers/6273bac90ec43f31c5b8a0da
+GET http://localhost:3000/subscribers/6272b890b86749805cadf40a
 ### 
 DELETE http://localhost:3000/subscribers/6273ba730ec43f31c5b8a0d5
+###
+PATCH  http://localhost:3000/subscribers/6272b890b86749805cadf40a
+Content-Type: application/json;
+
+{
+    "userName": "João Paulo V Duarte",
+    "userChannel": "QA"
+}
+###
